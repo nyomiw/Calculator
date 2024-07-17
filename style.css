@@ -49,3 +49,8 @@ html{
     padding: 5px;
     text-align: right;
 }
+.screen .input{
+    color: #757575;
+    height: 60%;
+    font-size: 35px;
+}
