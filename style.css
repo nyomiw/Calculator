@@ -32,9 +32,9 @@ html{
     top: 10px;
     left: 10px;
     font-weight: 700;
-    color: #757575;
+    color: #080101;
 }
-.top .screen{
+.top .screen{9
     position: relative;
     width: 100%;
     top: 20%;
@@ -118,5 +118,5 @@ html{
     margin: 0 auto;
 }
 .credit a, .error{
-    color: #C2185B;
+    color: #f90606;
 }
