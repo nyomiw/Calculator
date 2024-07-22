@@ -36,10 +36,21 @@ function handKeyPress(e){
         return
     }
 
+
     if (operators.indexOf(lastChar) !== -1 && operators.indexOf(key) !== -1){
         input.innerHTML = operation
         return
     }
 
+if (key) {
+    if (key === '.') decimalAdded = true
+    operation += key
+    input.innerHTML = operation
+    return
 
 }
+}
+
+keys.forEach(key => {
+    key.addEventListener('click', handleKeyPress)
+})
