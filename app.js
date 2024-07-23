@@ -2,7 +2,7 @@
 const input = document.querySelector('.input')
 const result = document.querySelector('.result')
 const deleteBtn = document.querySelector('.delete')
-const keys = document.querySelectorAll('bottom span')
+const keys = document.querySelectorAll('.bottom span')
 
 let operation = ""
 let answer
@@ -10,7 +10,7 @@ let decimalAdded = false
 
 const operators = ['+', '-', 'x', '/']
 
-function handKeyPress(e){
+function handleKeyPress(e){
     const key = e.target.dataset.key
     const lastChar = operation[operation.length - 1]
 
@@ -42,13 +42,14 @@ function handKeyPress(e){
         return
     }
 
-if (key) {
+    if (key) {
     if (key === '.') decimalAdded = true
     operation += key
     input.innerHTML = operation
     return
 
-}
+    }
+
 }
 
 keys.forEach(key => {
