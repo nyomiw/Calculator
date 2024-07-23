@@ -14,6 +14,8 @@ function handleKeyPress(e){
     const key = e.target.dataset.key
     const lastChar = operation[operation.length - 1]
 
+
+    
     if(key === '='){
         return
     }
